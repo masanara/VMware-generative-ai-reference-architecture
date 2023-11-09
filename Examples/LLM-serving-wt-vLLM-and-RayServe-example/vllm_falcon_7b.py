@@ -133,7 +133,7 @@ def send_sample_request():
 
 
 # Deployment definition for Ray Serve
-deployment = VLLMPredictDeployment.bind(model="elyza/ELYZA-japanese-Llama-2-7b",
+deployment = VLLMPredictDeployment.bind(model="elyza/ELYZA-japanese-Llama-2-7b-fast-instruct",
                                             dtype="bfloat16",
                                             trust_remote_code=True,
                                             )
