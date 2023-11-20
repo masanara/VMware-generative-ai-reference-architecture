@@ -28,7 +28,7 @@ spec:
         spec:
           containers:
           - name: ray-head
-            image: rayproject/ray:2.6.2-py310-cu118
+            image: harbor.nsx.techlab.netone.co.jp/kuberay/ray:2.8.0-py310-cu121
             ports:
             - containerPort: 6379
               name: gcs
@@ -63,7 +63,7 @@ spec:
         spec:
           containers:
           - name: ray-worker
-            image: rayproject/ray:2.6.2-py310-cu118
+            image: harbor.nsx.techlab.netone.co.jp/kuberay/ray:2.8.0-py310-cu121
             resources:
               limits:
                 cpu: 32
